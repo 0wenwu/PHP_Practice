@@ -1,7 +1,7 @@
 ﻿<?php
 $sid=$_POST["sid"];
 $uid=$_POST["uid"];
-$con=@mysql_connect("localhost","root","wuwei");
+$con=@mysql_connect("url","username","password");
 if($con)
 {
 	@mysql_select_db("test",$con);
