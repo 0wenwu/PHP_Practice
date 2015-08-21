@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="信息查询">
+<title>
+信息查询
+</title>
+<style>
+.main_div{
+	text-align:center;
+	margin:0 auto;
+}
+
+table{
+	margin:0 auto;	
+	border:1px solid black;
+}
+
+table td{
+	text-align:center;
+	border:1px solid black;
+	width:100px;
+}
+
+#tb1{
+	display:none;
+}
+
+#tb2{
+	display:none;
+}
+</style>
+<script type="text/javascript" src="func.js">
+</script>
+</head>
+<body>
+<div class="main_div">
+<h1>信息查询系统</h1>
+
+<!--输入框区域-->
+<font style="font-family:'宋体',Simsun;">学&nbsp;&nbsp;&nbsp;&nbsp;号：</font><input id="ip1" type="text" value="">
+<p></p>
+身份证号：<input id="ip2" type="text" value="">
+<p></p>
+<!---->
+
+<!--按钮区域-->
+<input type="button" value="确认查询" onclick="submit()">
+<font style="font-family:'宋体',Simsun;">&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;</font>
+<input type="button" value="重置查询" onclick="reset()"><br/>
+<!---->
+<p>
+<span id="tip"></span>
+</p>
+<!--表格区域-->
+<table id="tb1" cellspacing=0>
+<tr><td>学院</td><td>学号</td><td>姓名</td><td>班级</td><td>派遣地</td><td>备注</td><td>性别</td><td>身份证号</td><td>录取审批表1</td><td>录取审批表2</td><td>高考信息表</td><td>高中档案</td><td>毕业生登记</td></tr>
+</table>
+<p></p>
+<table id="tb2" cellspacing=0>
+<tr><td>学籍表</td><td>体检表</td><td>团关系1</td><td>团关系2</td><td>党员1</td><td>党员2</td><td>奖惩表1</td><td>奖惩表2</td><td>专升本1</td><td>专升本2</td><td>教师资格证1</td><td>教师资格证2</td><td>备注</td></tr>
+</table>
+<!---->
+</div>
+</body>
